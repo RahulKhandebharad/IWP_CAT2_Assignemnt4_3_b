@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h2>3.b. Add & remove new HTML elements / contents</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#div1").remove();
+  });
+ $("#btn2").click(function(){
+    $("#div1").append("This is APPENDED paragraph of div");
+  });
+});
+</script>
+</head>
+<body>
+
+<div id="div1" style="height:150px;width:450px;background-color: burlywood"  >
+
+Hello World this is div. 
+<p>First paragraph of div.</p>
+<p>Second paragraph of div.</p>
+
+</div>
+<br>
+
+<button id="btn1">Remove this element</button>
+<button id="btn2">Append paragraph</button>
+
+</body>
+</html>
